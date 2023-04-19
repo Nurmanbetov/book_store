@@ -10,6 +10,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
+// main function, runs the app on localhost:9010
 func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r)

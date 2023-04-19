@@ -6,6 +6,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// Routes/urls to send API requests.
 var RegisterBookStoreRoutes = func(router *mux.Router) {
 	router.HandleFunc("/book/", controllers.CreateBook).Methods("POST")
 	router.HandleFunc("/book/", controllers.GetBook).Methods("GET")
